@@ -66,6 +66,7 @@ library(DBI)
 ## Assign the connection to `db` variable
 db <- dbConnect(RSQLite::SQLite(), "data/tidynomicon/example.db")
 
+
 ## Query the Person table using the `dbGetQuery` function and the
 ## `SELECT * FROM PERSON;` SQL statement
 ## Assign the result to the `person_df` variable
