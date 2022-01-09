@@ -5,6 +5,7 @@
 ## Load the ggplot2 package
 library(ggplot2)
 library(qqplotr)
+library(pastecs)
 theme_set(theme_minimal())
 
 ## Set the working directory to the root of your DSC 520 directory
@@ -60,9 +61,6 @@ print("Answer : NO")
 print("Not exactly symmetrical, not exactly bell shaped, and mean,median, mode are not same")
 
 #V, Create a Probability Plot of the HSDegree variable.
-
-
-
 qplot(sample = HSDegree, data = usacom_df, xlab="HSDegree %",ylab = "Count")
 
 print("Vi :Answer the following questions based on the Probability Plot:")
@@ -74,7 +72,7 @@ print("Answer : ")
 print("Yes, not normal, the distrinution is skewed. its left skewed. Data that have an upper bound are often skewed left.")
 
 print("Vii : Now that you have looked at this data visually for normality, you will now quantify normality with numbers using the stat.desc() function. Include a screen capture of the results produced.")
-#stat.desc(usacom_df)
+stat.desc(usacom_df$HSDegree)
 print("Answer: In the attached document")
 
 
