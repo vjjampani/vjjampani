@@ -1,0 +1,48 @@
+---
+title: "DSC520 Week10 Exercise 10.2.2"
+author: "Venkat Jagadeesh Jampani"
+date: February 20th 2022
+output:
+  pdf_document: default
+  word_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Project: Fit a Logistic Regression model to Binary Classifier Dataset
+
+```{r}
+library(caTools)
+setwd("/Users/Jagadeesh/Documents/GitHub/dsc520")
+# Load Binary Classifier Dataset 
+binary_classifier_df <- read.csv("data/binary-classifier-data.csv")
+# Check structure of binary_classifier_df
+str(binary_classifier_df)
+# Check sample rows of binary_classifier_df
+head(binary_classifier_df)
+# Fit the LR model to the Binary Classifier Data set
+lrmodel <- glm(label ~ .,data = binary_classifier_df, family = 'binomial')
+# Check the summary of the model
+summary(lrmodel)
+## As y value has lower p-value, it should be a good predictor for label
+# Split the data into 2 data sets - test and train
+split <- sample.split(binary_classifier_df, SplitRatio = 0.8)
+split
+train <- subset(binary_classifier_df, split=="TRUE")
+test <- subset(binary_classifier_df, split=="FALSE")
+# Fit the model to the test data set
+res <- predict(lrmodel, test, type="response")
+res
+# Fit the model to the train data set
+res <- predict(lrmodel, train, type="response")
+res
+# Validate the model using confusion matrix
+confusion_matrix <- table(Actual_Value=train$label, Predicted_Value= res>0.5)
+confusion_matrix
+# Check Accuracy of the model
+(confusion_matrix[[1,1]] + confusion_matrix[[2,2]]) / sum(confusion_matrix)
+## Conclusion: The Accuracy of the model is ~58%
+```
