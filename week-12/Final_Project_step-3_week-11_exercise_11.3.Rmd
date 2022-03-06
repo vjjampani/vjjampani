@@ -1,0 +1,80 @@
+---
+title: "DSC520 Week-12 Exercise 11.3"
+author: "Venkat Jagadeesh Jampani"
+date: March 5th 2022
+output:
+  pdf_document: default
+  word_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Project: Impact of Covid 19 on Home Prices/IT Jobs/Migration in USA. -- Step:3
+
+## Introduction
+  Covid 19 Coronavirus disease 2019 (COVID-19) is a contagious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). The first known case was identified in Wuhan, China, in December 2019. The disease has since spread worldwide, leading to an ongoing pandemic. 
+Symptoms of COVID‑19 are variable, but often include fever,cough, headache,fatigue, breathing difficulties, loss of smell, and loss of taste. Symptoms may begin one to fourteen days after exposure to the virus. At least a third of people who are infected do not develop noticeable symptoms. Of those people who develop symptoms noticeable enough to be classed as patients, most (81%) develop mild to moderate symptoms (up to mild pneumonia), while 14% develop severe symptoms (dyspnea, hypoxia, or more than 50% lung involvement on imaging), and 5% suffer critical symptoms (respiratory failure, shock, or multiorgan dysfunction). Older people are at a higher risk of developing severe symptoms. Some people continue to experience a range of effects (long COVID) for months after recovery, and damage to organs has been observed. Multi-year studies are underway to further investigate the long-term effects of the disease.
+Due to COvid-19, many people working in the Information technology, started to work remotely (WFH - work from home). That directly effected the demand for home prices. I would like to address the consequences of the COVid 19 on information technology jobs and the demand for the migration, work from home and the affect on the increase and decrease of Housing prices.  
+  
+    
+## The problem statement you addressed. 
+
+This project deals about the impact of COVID-19 on US Market in the following areas :
+    1. Housing prices: The Impact of COVID19 on the housing prices across different states in USA.
+    2. Job Market in IT and other ITES Services. : How the Job market is impacted by the effect of COID-19 
+
+## How you addressed this problem statement
+    a. Data Collection from different sources on the 3 major areas
+        1. COid-19 cases, deaths across USA, both historical and latest data. Data Source:                                          https://www.nytimes.com/interactive/2021/us/covid-cases.html
+      2.Hosing sales and prices in USA Data Source: 
+              1. https://www.realtor.com/research/january-2022-data/
+              2. https://www.redfin.com/
+              3. https://www.zillow.com/
+      3. IT Jobs and People migration across USA Data Source: 
+              1. https://www.dice.com/
+              2. https://www.linkedin.com/
+              3. https://www.monster.com/
+              
+    b. Applied the filters on required attributed from each area of the data.
+    c. After applying filters, finalized the final data set in each area of analysis.
+
+## Analysis.
+  1. After finalizing the data from each of the areas, the final set of the data is stored in CVS format.
+  2. From each set of data, required attributes are identified
+  3. From the each set of data, applied the link between different data sets.
+      eg: 1.how many new jobs are created in each state compared to previous year.
+          2.which states have see highest number of job openings.
+          3. Which states has see lowest growth in the jobs compared to the previous year.
+          4. Housing prices: which states the median home prices increased and decreased.
+          5. How many number of deaths are reported in each state due to COVID 19.
+          
+      
+## Implications.
+   Following implications are identified :
+      a. The deaths are huge approximately 10 MILLION in USA than normal due to COVID -19
+      b. The Jobs markets are heavily impacted by the virus, positively in IT sector and negatively in other sectors like hospitality, tourism etc.
+      c. Real estate prices are heavily impacted due to Covid-19 and there are few positives and more negatives.  
+
+## Limitations.
+  Following limitations are identified during the project analysis:
+    a. The base data is changing rapidly. i.e The average weekly covid cases and details are increased in the initial part of the year and decreasing at present.
+    b. The jobs market also surprised in the few months ( Jan, Feb, Mar) with more job listings.
+    c. Housing sales are impacted by the availability of inventory.
+
+##Concluding Remarks
+  Below are the final conclusion of the project :
+  
+  1. Covid-9 impacted each and every human being and every sector of the Markets.
+  2. There are more than 10 million people died in USA due to COVID and Post covid complications.
+  3. Covid 19 impacted : Travel, tourism and hospitality sectors heavily than IT sector.
+  4. More number IT employees are stared working from home and it increased the productivity.
+  5. As people started working more hours and it resumed in better results and less disasters in IT.
+  6. Pollution across the globe was decreased due to less usage of Oil and gas and travel.
+  7. The demand of for the office space is reduced and many rental leases are expired with out renewal.
+  8. The people started looking for better office spaces at home, so demand for bigger houses increased and that resulted in more demand for large and single family houses.
+  9. More number of the people are migrating towards the dry states : Texas, Florida, California etc.
+  10. People completely adjusted to the new way of working and life style.
+
