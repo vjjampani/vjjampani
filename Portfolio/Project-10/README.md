@@ -1,0 +1,4 @@
+#### 1. IPL (Indian Premier League) Match Predictive Analysis
+[Link](https://github.com/vjjampani/vjjampani/tree/main/DSC-680/Project-3)
+The Indian Premier League is a professional Twenty20 cricket league in India. There are 10 franchises in the league representing different cities/state in India. IPL features many international and domestic players and usually happens between march and may every year. IPL (Indian Premier League) is the 2nd biggest sports league in the world next to NFL in USA.
+IPL has only started in 2008 and it is already one of the fastest growing sports leagues in the world taking 2nd spot recently. The viewership and revenue have been in an uptrend too. Data Analytics has been a part of sports entertainment for a long time. As a sports enthusiast, I am curious to build a predictive analysis model to predict the winning team in an IPL match/tournament using various available stats available for all seasons (2008-2022).

@@ -1,0 +1,3 @@
+#### 1. Tesla Supercharing Stations Prediction
+[Link](https://github.com/vjjampani/vjjampani/tree/main/DSC-680/Project-1)
+Of all the various brands in the current market, Tesla is clearly the market leader not just because of the brand value and design but mostly because of the reliable Tesla supercharging stations. The public charging stations had their share of problems as they sometimes don’t work which is quite frustrating to the EV car owners. One of the key features for prospective EV car buyers is charging stations. I will be exploring more on this aspect where it might be useful for upcoming EV buyers to make purchase based on the charging stations and their possible expansion pattern/prediction. The focus of this model is limited to USA.
